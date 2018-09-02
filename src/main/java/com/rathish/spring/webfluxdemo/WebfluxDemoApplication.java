@@ -8,5 +8,9 @@ public class WebfluxDemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WebfluxDemoApplication.class, args);
+
+        // Consumer - for testing
+        EmployeeWebClient employeeWebClient = new EmployeeWebClient();
+        employeeWebClient.consume();
     }
 }
